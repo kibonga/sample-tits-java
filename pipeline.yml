@@ -1,0 +1,9 @@
+build-gradle: &build |-
+  echo "Starting gradle build (from build-gradle section)..."
+  ./gradlew build
+  echo "Build successful!"
+
+steps:
+  default:
+    script:
+      - *build
